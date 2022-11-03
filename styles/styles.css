@@ -309,10 +309,11 @@ header{
     padding: 16px;
 }
 .works{
-    width: 90%;
+    max-width: 90%;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 135px;
 }
 .work_nav{
     display: flex;
@@ -321,7 +322,7 @@ header{
     list-style: none;
 }
 .work_nav > li{
-    min-width: 61px;
+    min-width: 60px;
     height: 40px;
     padding: 5px 20px;
     border-radius: 3px;
@@ -337,15 +338,12 @@ header{
 .works_flex{
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    margin-top: 50px;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding-top: 50px;
 }
-.works-background{
-    flex-basis: 390px;
-    margin: 15px;
-}
-.works-background:nth-child(2){
-    height: 292px;
+.works_flex-item{
+    flex-basis: calc((100% - 40px) / 3); 
 }
 .section-testimonals{
     text-align: center;
