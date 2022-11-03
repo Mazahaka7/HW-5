@@ -309,10 +309,10 @@ header{
     padding: 16px;
 }
 .works{
-    max-width: 90%;
+    /* max-width: 90%; */
     text-align: center;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 103px;
+    margin-left: 103px;
     margin-top: 135px;
 }
 .work_nav{
@@ -338,12 +338,20 @@ header{
 .works_flex{
     display: flex;
     flex-wrap: wrap;
-    column-gap: 20px;
+    align-items: initial;
+    align-content: flex-start;
     row-gap: 20px;
     padding-top: 50px;
 }
 .works_flex-item{
-    flex-basis: calc((100% - 40px) / 3); 
+    flex-basis: calc((100% - 20px) / 3); 
+}
+.works_flex-item:nth-child(even){
+    flex-shrink: 1;
+}
+.works_flex-item:nth-child(odd){
+    flex-grow: 2;
+    
 }
 .section-testimonals{
     text-align: center;
