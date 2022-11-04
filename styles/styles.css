@@ -346,13 +346,6 @@ header{
 .works_flex-item{
     flex-basis: calc((100% - 20px) / 3); 
 }
-.works_flex-item:nth-child(even){
-    flex-shrink: 1;
-}
-.works_flex-item:nth-child(odd){
-    flex-grow: 2;
-    
-}
 .section-testimonals{
     text-align: center;
     margin-top: 135px;
