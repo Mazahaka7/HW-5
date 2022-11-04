@@ -84,6 +84,9 @@ video {
     margin: 0;
     padding: 0;
 }
+ul {
+    list-style: none;
+}
 
 /* Colors settings */
 :root {
@@ -93,6 +96,7 @@ video {
     --primery-black-color:#212529;
     --paragraph-color: #D4D4D4;
     --table-background-color:#383E45;
+    --footer-background-color:#1C1C1C;
     --accent-gradient-color: linear-gradient(94.3deg, #FFB742 0%, rgba(255, 123, 66, 0.76) 99.33%);
 }
 body {
@@ -120,8 +124,6 @@ header{
 .nav{
     display:flex;
     justify-content: space-around;
-    list-style: none;
-
 }
 .nav > li:not(:last-child){
     margin-right: 25px;
@@ -309,17 +311,16 @@ header{
     padding: 16px;
 }
 .works{
-    /* max-width: 90%; */
+    max-width: 80%;
     text-align: center;
-    margin-right: 103px;
-    margin-left: 103px;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 135px;
 }
 .work_nav{
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    list-style: none;
 }
 .work_nav > li{
     min-width: 60px;
@@ -338,14 +339,15 @@ header{
 .works_flex{
     display: flex;
     flex-wrap: wrap;
-    align-items: initial;
     align-content: flex-start;
     row-gap: 20px;
+    /* column-gap: 20px; */
     padding-top: 50px;
 }
 .works_flex-item{
     flex-basis: calc((100% - 20px) / 3); 
 }
+
 .section-testimonals{
     text-align: center;
     margin-top: 135px;
@@ -355,6 +357,54 @@ header{
     justify-content:center;
     margin-top:90px;
 }
-.testimonials > div:not(:last-child){
+.testimonails-item {
+    flex-basis: calc((100%-80px) / 3);
+    max-width: 378px;
+}
+.testimonails-item:not(:last-child){
     margin-right: 40px;
+}
+footer{
+    max-height: 470px;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 2;
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer_flex{
+    display: flex;
+    justify-content: space-around;
+
+    padding-top: 148px;
+    padding-bottom: 90px;
+}
+.footer_main-heading{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    color: var(--accent-color);
+    margin-bottom: 30px;
+}
+.footer-heading{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.45;
+    color: var(--primery-white-color);
+}
+
+.footer-subheading{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 2;
+    color: var(--paragraph-color);
+}
+.footer_list-item:hover{
+    color: var(--accent-color);
 }
