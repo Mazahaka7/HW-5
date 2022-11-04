@@ -93,6 +93,7 @@ video {
     --primery-black-color:#212529;
     --paragraph-color: #D4D4D4;
     --table-background-color:#383E45;
+    --footer-background-color:#1C1C1C;
     --accent-gradient-color: linear-gradient(94.3deg, #FFB742 0%, rgba(255, 123, 66, 0.76) 99.33%);
 }
 body {
@@ -358,4 +359,24 @@ header{
 }
 .testimonials > div:not(:last-child){
     margin-right: 40px;
+}
+footer{
+    max-height: 470px;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.9;
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer_flex{
+    display: flex;
+    justify-content: space-around;
+
+    padding-top: 148px;
+    padding-bottom: 90px;
 }
