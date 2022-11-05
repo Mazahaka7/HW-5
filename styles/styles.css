@@ -92,12 +92,6 @@ ul {
     padding: 0 15px;
     margin: 0 auto;
 }
-.container2{
-    width: 1350px;
-    outline: 1px dashed red;
-    padding: 0 15px;
-    margin: 0 auto;
-}
 /* Colors settings */
 :root {
     --footer-text-color: #7B7B7B;
@@ -117,10 +111,8 @@ body {
     line-height: 1.9;
     background-color: var(--primery-black-color);
     color: var(--primery-white-color);
-    /* margin-left: auto; */
-    /* margin-right: auto; */
 }
-header{
+.header{
     display:flex;
     justify-content: space-around;
     margin-left: auto;
