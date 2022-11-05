@@ -87,7 +87,17 @@ video {
 ul {
     list-style: none;
 }
-
+.container {
+    width: 1210px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.container2{
+    width: 1350px;
+    outline: 1px dashed red;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 /* Colors settings */
 :root {
     --footer-text-color: #7B7B7B;
@@ -107,8 +117,8 @@ body {
     line-height: 1.9;
     background-color: var(--primery-black-color);
     color: var(--primery-white-color);
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
 }
 header{
     display:flex;
@@ -185,6 +195,7 @@ header{
 .hero-img{
     margin-top: 22px;
 }
+/* Section Experience */
 .experiece{
     display: flex;
     justify-content: space-evenly;
@@ -234,20 +245,23 @@ header{
 .card-content{ 
     margin: 25px auto;   
 }
+/* Section About */
 .about{
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    align-items: flex-start;
     margin-right: auto;
     margin-left: auto;
-}
-.about-content{
-    margin-right: 50px;
 }
 .section-heading{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 48px;
     text-transform: capitalize;
+}
+.about-text {
+    margin-top: 30px;
+    margin-bottom: 55px;
 }
 .about-link, .my_skills, .my_works, .my_testimonials{
     order: -1;
@@ -265,20 +279,19 @@ header{
     border-radius: 50px;
     text-align: center;
 }
-.about-text{
-    margin-top: 30px;
-    margin-bottom: 55px;
+.about-content{
+    flex-basis: 50%;
 }
-.about-img{
+.about-img{ 
     order: -1;
-    margin-right: 80px;
+    margin-right: 7%;
 }
 .skills{
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
     margin-left: auto;
-    margin-right: auto;
+    margin-right:auto;
 }
 .skills-content{
     width: 50%;
@@ -311,7 +324,7 @@ header{
     padding: 16px;
 }
 .works{
-    max-width: 80%;
+    /* max-width: 90%; */
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -321,6 +334,7 @@ header{
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    margin-bottom: 50px;
 }
 .work_nav > li{
     min-width: 60px;
@@ -336,18 +350,22 @@ header{
     background-color: var(--accent-color);
     color: var(--primery-black-color);
 }
-.works_flex{
+.my_work-flex{
     display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    row-gap: 20px;
-    /* column-gap: 20px; */
-    padding-top: 50px;
+    margin-left: -15px;
 }
-.works_flex-item{
-    flex-basis: calc((100% - 20px) / 3); 
+.works_flex{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
 }
-
+/* .works_flex:first-child{
+    margin-left: 50px;
+} */
+.works_flex:not(:last-child){
+    margin-right: 20px;
+}
+/* Section Testimonials */
 .section-testimonals{
     text-align: center;
     margin-top: 135px;
@@ -358,14 +376,14 @@ header{
     margin-top:90px;
 }
 .testimonails-item {
-    flex-basis: calc((100%-80px) / 3);
+    flex-basis: calc(100% / 3);
     max-width: 378px;
 }
 .testimonails-item:not(:last-child){
     margin-right: 40px;
 }
+/* footer */
 footer{
-    max-height: 470px;
     font-family: 'Work Sans', sans-serif;
     letter-spacing: 0.03em;
     font-weight: 500;
@@ -374,15 +392,18 @@ footer{
     background-color: var(--footer-background-color);
     color: var(--footer-text-color);
     margin-top: 250px;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 .footer_flex{
     display: flex;
+    /* max-width: 100%; */
     justify-content: space-around;
-
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 148px;
     padding-bottom: 90px;
+    height: fit-content;
 }
 .footer_main-heading{
     font-family: 'Poppins', sans-serif;
