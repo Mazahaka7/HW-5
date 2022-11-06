@@ -349,9 +349,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-/* .works_flex:first-child{
-    margin-left: 50px;
-} */
 .works_flex:not(:last-child){
     margin-right: 20px;
 }
@@ -382,8 +379,6 @@ footer{
     background-color: var(--footer-background-color);
     color: var(--footer-text-color);
     margin-top: 250px;
-    /* margin-left: auto;
-    margin-right: auto; */
 }
 .footer_flex{
     display: flex;
