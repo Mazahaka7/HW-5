@@ -310,10 +310,8 @@ body {
     text-align: center;
 }
 .skills-table img {
-    padding: 16px;
-}
-.skills-table svg {
-    padding: 16px;
+    text-align: center;
+    padding-top: 16px;
 }
 .works{
     /* max-width: 90%; */
