@@ -309,6 +309,9 @@ body {
     border-radius: 10px;
     text-align: center;
 }
+.skills-table td:hover{
+    background-color: var(--accent-color);
+}
 .skills-table img {
     text-align: center;
     padding-top: 16px;
