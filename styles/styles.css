@@ -385,10 +385,10 @@ footer{
 }
 .footer_flex{
     display: flex;
-    /* max-width: 100%; */
     justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 250px;
     padding-top: 148px;
     padding-bottom: 90px;
     height: fit-content;
